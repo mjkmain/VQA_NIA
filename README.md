@@ -18,6 +18,8 @@ Memory : 126G
 ``` shell
 pip install -r requirements.txt
 ```
+
+<!--
 ## 1. 이미지 다운로드
 
 - 코드를 통한 이미지 다운로드
@@ -39,8 +41,8 @@ Access denied with the following error:
 
 You may still be able to access the file from the browser:
 ```
-
-## 2. 디렉토리 구조
+-->
+## 1. 디렉토리 구조
 
 ```
 VQA_NIA
@@ -66,7 +68,7 @@ VQA_NIA
 
 
 
-## 3. 학습
+## 2. 학습
 
 #### 기본 구조
 ```shell
@@ -94,7 +96,7 @@ python main.py --[옵션]
 python main.py --n_epoch 30 --batch_size 128 --use_transformer_layer
 ```
 
-## 4. 개별 데이터 추론
+## 3. 개별 데이터 추론
 
 #### 기본 구조
 ```shell
@@ -110,7 +112,7 @@ python inference_each.py --[옵션]
 python inference_each.py --model_path ./results/all_1228_1734/infer_model_57.15.pt
 ```
 
-## 5. 모든 데이터 추론 (Test 성능 확인)
+## 4. 모든 데이터 추론 (Test 성능 확인)
 
 #### 기본 구조
 ```shell
@@ -129,7 +131,7 @@ python inference.py --[옵션]
 python inference.py --model_path ./results/all_1228_1734/infer_model_57.15.pt --infer_data vqa
 ```
 
-## 6. 모델 설명
+## 5. 모델 설명
 
 > Question Feature Extractor : XLM-Roberta-base
 
